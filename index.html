@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>Sadaf Shahid Sheikh | Software Engineering Student & Full Stack Developer</title>
+  <meta name="title" content="Sadaf Shahid Sheikh | Software Engineering Student & Full Stack Developer" />
+  <meta name="description" content="Official personal portfolio of Sadaf Shahid Sheikh — Software Engineering Student (ADSE at Aptech Learning) and Full Stack Developer in Karachi, Pakistan. Explore projects, skills, education, and experience." />
+  <meta name="keywords" content="Sadaf Shahid Sheikh, Full Stack Developer, Software Engineering Student, Web Developer Karachi, Aptech Learning, HTML5, CSS3, JavaScript, Bootstrap 5, Portfolio" />
+  <meta name="author" content="Sadaf Shahid Sheikh" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sadaf Shahid Sheikh | Software Engineering Student & Full Stack Developer" />
+  <meta property="og:description" content="Passionate web developer creating modern, responsive, and user-friendly digital experiences." />
+
+  <!-- Custom SVG Browser Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%238B5CF6'/%3E%3Cstop offset='100%25' stop-color='%233B82F6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%2307070B'/%3E%3Crect x='2' y='2' width='60' height='60' rx='14' fill='none' stroke='url(%23g)' stroke-width='3'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui, sans-serif' font-weight='800' font-size='28' fill='%23FFFFFF'%3ES%3Ctspan fill='%238B5CF6'%3E.%3C/tspan%3ES%3C/text%3E%3C/svg%3E" />
+
+  <!-- Google Fonts: Plus Jakarta Sans, Space Grotesk & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Subtle Ambient Background Orbs -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="orb orb-purple"></div>
+    <div class="orb orb-blue"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Mobile Top Header (Visible < 992px) -->
+  <header class="mobile-topbar d-lg-none">
+    <a href="#home" class="brand-mark">
+      <span class="brand-monogram">SS</span>
+      <span class="brand-name">Sadaf<span class="accent-dot">.</span></span>
+    </a>
+    <button class="sidebar-toggle-btn" id="sidebarToggle" type="button" aria-label="Toggle Navigation Menu" aria-expanded="false">
+      <i class="bi bi-list" id="toggleIcon"></i>
+    </button>
+  </header>
+
+  <!-- Mobile Backdrop -->
+  <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+  <!-- Fixed Vertical Sidebar Navigation -->
+  <aside class="vertical-sidebar" id="verticalSidebar" aria-label="Primary Sidebar Navigation">
+    <div class="sidebar-inner">
+      <!-- Brand Identity -->
+      <div class="sidebar-brand">
+        <a href="#home" class="brand-link">
+          <div class="brand-badge">
+            <span>SS</span>
+          </div>
+          <div class="brand-info">
+            <span class="brand-title">Sadaf Sheikh</span>
+            <span class="brand-subtitle">Full Stack Dev</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Availability Pill -->
+      <div class="availability-pill">
+        <span class="pulse-dot"></span>
+        <span>Open to Opportunities</span>
+      </div>
+
+      <!-- Vertical Navigation Links -->
+      <nav class="sidebar-nav" id="sidebarNav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active" data-section="home">
+              <span class="nav-icon"><i class="bi bi-house-door"></i></span>
+              <span class="nav-label">Home</span>
+              <span class="active-indicator"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link" data-section="about">
+              <span class="nav-icon"><i class="bi bi-person"></i></span>
+              <span class="nav-label">About Me</span>
+              <span class="active-indicator"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link" data-section="skills">
+              <span class="nav-icon"><i class="bi bi-cpu"></i></span>
+              <span class="nav-label">Skills</span>
+              <span class="active-indicator"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link" data-section="experience">
+              <span class="nav-icon"><i class="bi bi-briefcase"></i></span>
+              <span class="nav-label">Experience</span>
+              <span class="active-indicator"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#education" class="nav-link" data-section="education">
+              <span class="nav-icon"><i class="bi bi-mortarboard"></i></span>
+              <span class="nav-label">Education</span>
+              <span class="active-indicator"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link" data-section="projects">
+              <span class="nav-icon"><i class="bi bi-folder2-open"></i></span>
+              <span class="nav-label">Projects</span>
+              <span class="active-indicator"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link" data-section="contact">
+              <span class="nav-icon"><i class="bi bi-envelope"></i></span>
+              <span class="nav-label">Contact</span>
+              <span class="active-indicator"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Sidebar Footer Socials & Location -->
+      <div class="sidebar-footer">
+        <div class="sidebar-socials">
+          <a href="https://www.linkedin.com/in/sadaf-shahid-" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile" title="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile" title="GitHub">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="mailto:aptechdazzy@gmail.com" class="social-icon-btn" aria-label="Send Email" title="Email">
+            <i class="bi bi-envelope-fill"></i>
+          </a>
+        </div>
+        <p class="sidebar-location">
+          <i class="bi bi-geo-alt-fill"></i> Karachi, Pakistan
+        </p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main class="main-wrapper">
+    <!-- ==================== 1. HERO SECTION ==================== -->
+    <section id="home" class="hero-section section-padding">
+      <div class="container-xl">
+        <div class="row align-items-center g-5">
+          <!-- Left Content Column -->
+          <div class="col-lg-7 reveal-up">
+            <div class="eyebrow-tag">
+              <i class="bi bi-terminal"></i>
+              <span>Welcome to my digital portfolio</span>
+            </div>
+
+            <h1 class="hero-greeting">
+              Hello, I'm <span class="gradient-text d-block mt-1">Sadaf Shahid Sheikh</span>
+            </h1>
+
+            <p class="hero-role">
+              Web Designer <span class="role-divider">|</span> Frontend Developer
+            </p>
+
+            <p class="hero-intro">
+              "I am a passionate web developer who loves creating modern, responsive and user-friendly websites. I enjoy learning new technologies and transforming creative ideas into digital experiences."
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="hero-actions d-flex flex-wrap align-items-center gap-3">
+              <a href="assets/Sadaf-Shahid-Sheikh-CV.pdf" download="Sadaf-Shahid-Sheikh-CV.pdf" class="btn btn-primary-glow" id="downloadCvBtn">
+                <i class="bi bi-download me-2"></i>Download CV
+              </a>
+              <a href="#projects" class="btn btn-glass-outline">
+                <span>View My Projects</span>
+                <i class="bi bi-arrow-right ms-2"></i>
+              </a>
+            </div>
+
+            <!-- Social Links Bar -->
+            <div class="hero-social-strip mt-4 pt-2">
+              <span class="social-label">Connect with me:</span>
+              <div class="d-inline-flex gap-2">
+                <a href="https://www.linkedin.com/in/sadaf-shahid-" target="_blank" rel="noopener noreferrer" class="hero-social-pill" aria-label="LinkedIn">
+                  <i class="bi bi-linkedin"></i>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="hero-social-pill" aria-label="GitHub">
+                  <i class="bi bi-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Dedicated Profile Image Frame (No AI Person Image) -->
+          <div class="col-lg-5 reveal-up delay-1">
+            <div class="profile-frame-wrapper">
+              <div class="profile-glow-ring"></div>
+              <div class="profile-card glass-card">
+                <!--
+                  HOW TO ADD YOUR OWN PHOTOGRAPH:
+                  1. Save your photo inside the 'assets/' folder (e.g., assets/profile.jpg)
+                  2. Replace the placeholder div below with:
+                     <img src="assets/profile.jpg" alt="Sadaf Shahid Sheikh" class="profile-photo" />
+                -->
+                <div class="profile-photo-slot" id="profilePhotoSlot" role="region" aria-label="Dedicated Profile Photograph Area">
+                  <img id="profilePreviewImg" src="" alt="Sadaf Shahid Sheikh" class="profile-photo d-none" />
+                  <div class="photo-placeholder-content" id="photoPlaceholderContent">
+                    <div class="monogram-emblem">
+                      <span>SS</span>
+                    </div>
+                    <h2 class="placeholder-title">Your Photograph Here</h2>
+                    <p class="placeholder-hint">
+                      Place your photo at <code>assets/profile.jpg</code> or preview it live below
+                    </p>
+                    <label for="photoUploadInput" class="btn btn-sm btn-upload-preview">
+                      <i class="bi bi-camera me-1"></i> Preview Your Photo
+                    </label>
+                    <input type="file" id="photoUploadInput" accept="image/*" class="d-none" />
+                  </div>
+                </div>
+
+                <!-- Floating Tech Badge -->
+                <div class="floating-badge badge-top">
+                  <i class="bi bi-code-slash text-purple"></i>
+                  <span>ADSE Scholar</span>
+                </div>
+                <div class="floating-badge badge-bottom">
+                  <i class="bi bi-layers text-blue"></i>
+                  <span>Full Stack Web Dev</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 2. ABOUT ME SECTION ==================== -->
+    <section id="about" class="section-padding">
+      <div class="container-xl">
+        <div class="section-header reveal-up">
+          <span class="section-kicker">01 // Who I Am</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-7 reveal-up">
+            <div class="glass-card h-100 p-4 p-md-5">
+              <h3 class="card-heading mb-3">
+                Bridging Creative Web Design with Structured Software Engineering
+              </h3>
+              <p class="text-secondary-light mb-3">
+                I am <strong>Sadaf Shahid Sheikh</strong>, a dedicated Software Engineering student currently pursuing an <strong>Advanced Diploma in Software Engineering (ADSE)</strong> at <strong>Aptech Learning</strong> (North Nazimabad, Karachi).
+              </p>
+              <p class="text-secondary-light mb-4">
+                My core passion lies in <strong>web development, website designing, programming, and modern web technologies</strong>. Whether crafting pixel-accurate responsive interfaces, building interactive front-end components, or expanding my capabilities in backend development and database management, I focus on writing clean, maintainable code that delivers intuitive user experiences.
+              </p>
+
+              <div class="row g-3 pt-2">
+                <div class="col-sm-6">
+                  <div class="info-chip">
+                    <i class="bi bi-person-badge"></i>
+                    <div>
+                      <small>Full Name</small>
+                      <span>Sadaf Shahid Sheikh</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="info-chip">
+                    <i class="bi bi-geo-alt"></i>
+                    <div>
+                      <small>Location</small>
+                      <span>Karachi, Pakistan</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="info-chip">
+                    <i class="bi bi-mortarboard"></i>
+                    <div>
+                      <small>Current Program</small>
+                      <span>ADSE — Aptech Learning</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="info-chip">
+                    <i class="bi bi-envelope"></i>
+                    <div>
+                      <small>Email</small>
+                      <span>aptechdazzy@gmail.com</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Highlight Cards -->
+          <div class="col-lg-5 reveal-up delay-1">
+            <div class="d-flex flex-column gap-4 h-100">
+              <div class="glass-card p-4 flex-fill focus-card">
+                <div class="focus-icon purple-glow">
+                  <i class="bi bi-window-sidebar"></i>
+                </div>
+                <h4>Frontend & UI Craft</h4>
+                <p class="text-secondary-light mb-0">
+                  Designing responsive, accessible layouts using HTML5, CSS3, Bootstrap 5, and interactive JavaScript with clean visual hierarchy.
+                </p>
+              </div>
+
+              <div class="glass-card p-4 flex-fill focus-card">
+                <div class="focus-icon blue-glow">
+                  <i class="bi bi-database-gear"></i>
+                </div>
+                <h4>Full Stack Growth</h4>
+                <p class="text-secondary-light mb-0">
+                  Actively advancing backend development, server-side logic, and relational database management through hands-on ADSE coursework and real builds.
+                </p>
+              </div>
+
+              <div class="glass-card p-4 flex-fill focus-card">
+                <div class="focus-icon mixed-glow">
+                  <i class="bi bi-easel2"></i>
+                </div>
+                <h4>Teaching & Leadership</h4>
+                <p class="text-secondary-light mb-0">
+                  Combining technical discipline with clear communication and mentoring skills honed in the classroom.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. SKILLS SECTION ==================== -->
+    <section id="skills" class="section-padding">
+      <div class="container-xl">
+        <div class="section-header reveal-up">
+          <span class="section-kicker">02 // Capabilities</span>
+          <h2 class="section-title">Technical & Professional <span class="gradient-text">Skills</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <!-- Filter Pills -->
+        <div class="skill-filter-bar mb-4 reveal-up" role="tablist" aria-label="Filter Skills by Category">
+          <button class="filter-pill active" data-filter="all" type="button">All Skills (18)</button>
+          <button class="filter-pill" data-filter="development" type="button">Web & Development</button>
+          <button class="filter-pill" data-filter="tools" type="button">Tools & Productivity</button>
+          <button class="filter-pill" data-filter="soft" type="button">Professional & Soft Skills</button>
+        </div>
+
+        <!-- Skills Grid (All 18 Exact Skills) -->
+        <div class="row g-3 g-md-4" id="skillsGrid">
+          <!-- Web & Development -->
+          <div class="col-sm-6 col-md-4 col-xl-3 skill-item reveal-up" data-category="development">
+            <div class="skill-card glass-card">
+              <div class="skill-card-top">
+                <span class="skill-icon"><i class="bi bi-filetype-html"></i></span>
+                <span class="skill-tag">Core Web</span>
+              </div>
+              <h3 class="skill-name">HTML5</h3>
+              <div class="skill-meter"><div class="skill-meter-fill" style="--level: 95%"></div></div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-xl-3 skill-item reveal-up" data-category="development">
+            <div class="skill-card glass-card">
+              <div class="skill-card-top">
+                <span class="skill-icon"><i class="bi bi-filetype-css"></i></span>
+                <span class="skill-tag">Styling</span>
+              </div>
+              <h3 class="skill-name">CSS3</h3>
+              <div class="skill-meter"><div class="skill-meter-fill" style="--level: 92%"></div></div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-xl-3 skill-item reveal-up" data-category="development">
+            <div class="skill-card glass-card">
+              <div class="skill-card-top">
+                <span class="skill-icon"><i class="bi bi-filetype-js"></i></span>
+                <span class="skill-tag">Scripting</span>
+              </div>
+              <h3 class="skill-name">JavaScript</h3>
+              <div class="skill-meter"><div class="skill-meter-fill" style="--level: 85%"></div></div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-xl-3 skill-item reveal-up" data-category="development">
+            <div class="skill-card glass-card">
+              <div class="skill-card-top">
+                <span class="skill-icon"><i class="bi bi-bootstrap"></i></span>
+                <span class="skill-tag">Framework</span>
+              </div>
+              <h3 class="skill-name">Bootstrap 5</h3>
+              <div class="skill-meter"><div class="skill-meter-fill" style="--level: 92%"></div></div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-xl-3 skill-item reveal-up" data-category="development">
+            <div class="skill-card glass-card">
+              <div class="skill-card-top">
+                <span class="skill-icon"><i class="bi bi-code-square"></i></span>
+                <span class="skill-tag">Engineering</span>
+              </div>
+              <h3 class="skill-name">Frontend Development</h3>
+              <div class="skill-meter"><div class="skill-meter-fill" style="--level: 90%"></div></div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-xl-3 skill-item reveal-up" data-category="development">
+            <div class="skill-card glass-card">
+              <div class="skill-card-top">
+                <span class="skill-icon"><i class="bi bi-palette"></i></span>
+                <span class="skill-tag">Creative</span>
+              </div>
+              <h3 class="skill-name">Web Designing</h3>
+              <div class="skill-meter"><div class="skill-meter-fill" style="--level: 90%"></div></div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-xl-3 skill-item reveal-up" data-category="development">
+            <div class="skill-card glass-card">
+              <div class="skill-card-top">
+                <span class="skill-icon"><i class="bi bi-phone"></i></span>
+                <span class="skill-tag">Multi-Device</span>
+              </div>
+              <h3 class="skill-name">Responsive Web Design</h3>
+              <div class="skill-meter"><div class="skill-meter-fill" style="--level: 94%"></div></div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-xl-3 skill-item reveal-up" data-category="development">
+            <div class="skill-card glass-card">
+              <div class="skill-card-top">
+                <span class="skill-icon"><i class="bi bi-vector-pen"></i></span>
+                <span class="skill-tag">Design</span>
+              </div>
+              <h3 class="skill-name">UI/UX Basics</h3>
+              <div class="skill-meter"><div class="skill-meter-fill" style="--level: 82%"></div></div>
+            </div>
+          </div>
+
+          <!-- Tools & Productivity -->
+          <div class="col-sm-6 col-md-4 col-xl-3 skill-item reveal-up" data-category="tools">
+            <div class="skill-card glass-card">
+              <div class="skill-card-top">
+                <span class="skill-icon"><i class="bi bi-git"></i></span>
+                <span class="skill-tag">Version Control</span>
+              </div>
+              <h3 class="skill-name">Git & GitHub</h3>
+              <div class="skill-meter"><div class="skill-meter-fill" style="--level: 86%"></div></div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-xl-3 skill-item reveal-up" data-category="tools">
+            <div class="skill-card glass-card">
+              <div class="skill-card-top">
+                <span class="skill-icon"><i class="bi bi-search"></i></span>
+                <span class="skill-tag">Optimization</span>
+              </div>
+              <h3 class="skill-name">SEO Basics</h3>
+              <div class="skill-meter"><div class="skill-meter-fill" style="--level: 80%"></div></div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-xl-3 skill-item reveal-up" data-category="tools">
+            <div class="skill-card glass-card">
+              <div class="skill-card-top">
+                <span class="skill-icon"><i class="bi bi-hdd-network"></i></span>
+                <span class="skill-tag">Deployment</span>
+              </div>
+              <h3 class="skill-name">Website Hosting</h3>
+              <div class="skill-meter"><div class="skill-meter-fill" style="--level: 84%"></div></div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-xl-3 skill-item reveal-up" data-category="tools">
+            <div class="skill-card glass-card">
+              <div class="skill-card-top">
+                <span class="skill-icon"><i class="bi bi-file-earmark-word"></i></span>
+                <span class="skill-tag">Suite</span>
+              </div>
+              <h3 class="skill-name">MS Office</h3>
+              <div class="skill-meter"><div class="skill-meter-fill" style="--level: 90%"></div></div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-xl-3 skill-item reveal-up" data-category="tools">
+            <div class="skill-card glass-card">
+              <div class="skill-card-top">
+                <span class="skill-icon"><i class="bi bi-file-earmark-spreadsheet"></i></span>
+                <span class="skill-tag">Data</span>
+              </div>
+              <h3 class="skill-name">Microsoft Excel</h3>
+              <div class="skill-meter"><div class="skill-meter-fill" style="--level: 88%"></div></div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-xl-3 skill-item reveal-up" data-category="tools">
+            <div class="skill-card glass-card">
+              <div class="skill-card-top">
+                <span class="skill-icon"><i class="bi bi-film"></i></span>
+                <span class="skill-tag">Media</span>
+              </div>
+              <h3 class="skill-name">Video Editing</h3>
+              <div class="skill-meter"><div class="skill-meter-fill" style="--level: 82%"></div></div>
+            </div>
+          </div>
+
+          <!-- Professional & Soft Skills -->
+          <div class="col-sm-6 col-md-4 col-xl-3 skill-item reveal-up" data-category="soft">
+            <div class="skill-card glass-card">
+              <div class="skill-card-top">
+                <span class="skill-icon"><i class="bi bi-chat-dots"></i></span>
+                <span class="skill-tag">Interpersonal</span>
+              </div>
+              <h3 class="skill-name">Communication</h3>
+              <div class="skill-meter"><div class="skill-meter-fill" style="--level: 93%"></div></div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-xl-3 skill-item reveal-up" data-category="soft">
+            <div class="skill-card glass-card">
+              <div class="skill-card-top">
+                <span class="skill-icon"><i class="bi bi-lightbulb"></i></span>
+                <span class="skill-tag">Analytical</span>
+              </div>
+              <h3 class="skill-name">Problem Solving</h3>
+              <div class="skill-meter"><div class="skill-meter-fill" style="--level: 89%"></div></div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-xl-3 skill-item reveal-up" data-category="soft">
+            <div class="skill-card glass-card">
+              <div class="skill-card-top">
+                <span class="skill-icon"><i class="bi bi-clock-history"></i></span>
+                <span class="skill-tag">Workflow</span>
+              </div>
+              <h3 class="skill-name">Time Management</h3>
+              <div class="skill-meter"><div class="skill-meter-fill" style="--level: 91%"></div></div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-xl-3 skill-item reveal-up" data-category="soft">
+            <div class="skill-card glass-card">
+              <div class="skill-card-top">
+                <span class="skill-icon"><i class="bi bi-person-video3"></i></span>
+                <span class="skill-tag">Mentorship</span>
+              </div>
+              <h3 class="skill-name">Teaching</h3>
+              <div class="skill-meter"><div class="skill-meter-fill" style="--level: 94%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. EXPERIENCE SECTION ==================== -->
+    <section id="experience" class="section-padding">
+      <div class="container-xl">
+        <div class="section-header reveal-up">
+          <span class="section-kicker">03 // Career Journey</span>
+          <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="timeline-wrapper">
+          <!-- Role 1: Teacher -->
+          <div class="timeline-item reveal-up">
+            <div class="timeline-marker">
+              <i class="bi bi-person-workspace"></i>
+            </div>
+            <div class="timeline-card glass-card p-4 p-md-5">
+              <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-3">
+                <div>
+                  <h3 class="timeline-role">Teacher</h3>
+                  <p class="timeline-org mb-0">
+                    <i class="bi bi-building me-1"></i> SSCA G C-2
+                  </p>
+                </div>
+                <span class="timeline-date">2026 – Present</span>
+              </div>
+              <ul class="timeline-list mb-0">
+                <li>Delivered lessons and guided students.</li>
+                <li>Managed classroom activities and learning tasks.</li>
+                <li>Developed communication and presentation skills.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Role 2: Full Stack Developer -->
+          <div class="timeline-item reveal-up delay-1">
+            <div class="timeline-marker blue-marker">
+              <i class="bi bi-code-slash"></i>
+            </div>
+            <div class="timeline-card glass-card p-4 p-md-5">
+              <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-3">
+                <div>
+                  <h3 class="timeline-role">Full Stack Developer</h3>
+                  <p class="timeline-org mb-0">
+                    <i class="bi bi-laptop me-1"></i> Self-Employed
+                  </p>
+                </div>
+                <span class="timeline-date badge-blue">Independent Practice</span>
+              </div>
+              <ul class="timeline-list mb-0">
+                <li>Created navigation bars, forms, sliders and galleries.</li>
+                <li>Managed website content, images and layouts.</li>
+                <li>Used GitHub to manage and showcase projects.</li>
+                <li>Currently learning backend development and database management.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. EDUCATION SECTION ==================== -->
+    <section id="education" class="section-padding">
+      <div class="container-xl">
+        <div class="section-header reveal-up">
+          <span class="section-kicker">04 // Academic Background</span>
+          <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Edu 1 -->
+          <div class="col-lg-4 reveal-up">
+            <div class="edu-card glass-card h-100 p-4">
+              <div class="edu-top">
+                <div class="edu-icon"><i class="bi bi-award"></i></div>
+                <span class="edu-status status-active">In Progress</span>
+              </div>
+              <h3 class="edu-degree">Advanced Diploma in Software Engineering (ADSE)</h3>
+              <p class="edu-school">Aptech Learning – North Nazimabad</p>
+              <div class="edu-footer">
+                <span><i class="bi bi-calendar3 me-1"></i> In Progress</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Edu 2 -->
+          <div class="col-lg-4 reveal-up delay-1">
+            <div class="edu-card glass-card h-100 p-4">
+              <div class="edu-top">
+                <div class="edu-icon blue-icon"><i class="bi bi-journal-bookmark"></i></div>
+                <span class="edu-status">2024</span>
+              </div>
+              <h3 class="edu-degree">Intermediate (Commerce)</h3>
+              <p class="edu-school">Government Degree Girls College</p>
+              <div class="edu-footer">
+                <span><i class="bi bi-calendar-check me-1"></i> Completed 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Edu 3 -->
+          <div class="col-lg-4 reveal-up delay-2">
+            <div class="edu-card glass-card h-100 p-4">
+              <div class="edu-top">
+                <div class="edu-icon"><i class="bi bi-pc-display"></i></div>
+                <span class="edu-status">2021</span>
+              </div>
+              <h3 class="edu-degree">Matriculation (Computer Science)</h3>
+              <p class="edu-school">The Islamabad Grammar School</p>
+              <div class="edu-footer">
+                <span><i class="bi bi-calendar-check me-1"></i> Completed 2021</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 6. PROJECTS SECTION ==================== -->
+    <section id="projects" class="section-padding">
+      <div class="container-xl">
+        <div class="section-header reveal-up">
+          <span class="section-kicker">05 // Featured Work</span>
+          <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Project 1: ALBERTO – Luxury Watches -->
+          <div class="col-lg-4 reveal-up">
+            <article class="project-card glass-card h-100 d-flex flex-column">
+              <div class="project-visual visual-alberto">
+                <div class="visual-overlay"></div>
+                <div class="project-mockup">
+                  <div class="mockup-bar">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="mockup-body">
+                    <i class="bi bi-watch mockup-emblem"></i>
+                    <span class="mockup-title">ALBERTO</span>
+                    <small class="mockup-sub">SWISS HOROLOGY &amp; LUXURY</small>
+                  </div>
+                </div>
+                <span class="project-number">01</span>
+              </div>
+
+              <div class="project-body p-4 d-flex flex-column flex-grow-1">
+                <h3 class="project-title">ALBERTO – Luxury Watches</h3>
+                <ul class="project-highlights mb-3">
+                  <li>Developed a premium luxury watch website.</li>
+                  <li>Created responsive layouts and interactive galleries.</li>
+                  <li>Implemented animations and form validation.</li>
+                </ul>
+
+                <div class="tech-stack-list mt-auto mb-4">
+                  <span class="tech-badge">HTML</span>
+                  <span class="tech-badge">CSS</span>
+                  <span class="tech-badge">Bootstrap</span>
+                  <span class="tech-badge">JavaScript</span>
+                  <span class="tech-badge">jQuery</span>
+                </div>
+
+                <button type="button" class="btn btn-project-view w-100" data-project="alberto">
+                  <span>View Project</span>
+                  <i class="bi bi-arrow-up-right ms-2"></i>
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 2: Pakistan Tour -->
+          <div class="col-lg-4 reveal-up delay-1">
+            <article class="project-card glass-card h-100 d-flex flex-column">
+              <div class="project-visual visual-pakistan">
+                <div class="visual-overlay"></div>
+                <div class="project-mockup">
+                  <div class="mockup-bar">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="mockup-body">
+                    <i class="bi bi-compass mockup-emblem"></i>
+                    <span class="mockup-title">PAKISTAN TOUR</span>
+                    <small class="mockup-sub">DISCOVER NORTHERN HERITAGE</small>
+                  </div>
+                </div>
+                <span class="project-number">02</span>
+              </div>
+
+              <div class="project-body p-4 d-flex flex-column flex-grow-1">
+                <h3 class="project-title">Pakistan Tour</h3>
+                <ul class="project-highlights mb-3">
+                  <li>Designed a responsive tourism website.</li>
+                  <li>Showcased famous tourist destinations.</li>
+                  <li>Added interactive gallery and animations.</li>
+                </ul>
+
+                <div class="tech-stack-list mt-auto mb-4">
+                  <span class="tech-badge">HTML</span>
+                  <span class="tech-badge">CSS</span>
+                  <span class="tech-badge">JavaScript</span>
+                  <span class="tech-badge">Bootstrap</span>
+                  <span class="tech-badge">jQuery</span>
+                </div>
+
+                <button type="button" class="btn btn-project-view w-100" data-project="pakistan">
+                  <span>View Project</span>
+                  <i class="bi bi-arrow-up-right ms-2"></i>
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 3: BATTLEZONE – Gaming Website -->
+          <div class="col-lg-4 reveal-up delay-2">
+            <article class="project-card glass-card h-100 d-flex flex-column">
+              <div class="project-visual visual-battlezone">
+                <div class="visual-overlay"></div>
+                <div class="project-mockup">
+                  <div class="mockup-bar">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="mockup-body">
+                    <i class="bi bi-controller mockup-emblem"></i>
+                    <span class="mockup-title">BATTLEZONE</span>
+                    <small class="mockup-sub">NEXT-GEN GAMING PORTAL</small>
+                  </div>
+                </div>
+                <span class="project-number">03</span>
+              </div>
+
+              <div class="project-body p-4 d-flex flex-column flex-grow-1">
+                <h3 class="project-title">BATTLEZONE – Gaming Website</h3>
+                <ul class="project-highlights mb-3">
+                  <li>Created a modern gaming website.</li>
+                  <li>Designed homepage, About Us and Contact Us pages.</li>
+                  <li>Developed an attractive gaming interface.</li>
+                </ul>
+
+                <div class="tech-stack-list mt-auto mb-4">
+                  <span class="tech-badge">HTML</span>
+                  <span class="tech-badge">CSS</span>
+                </div>
+
+                <button type="button" class="btn btn-project-view w-100" data-project="battlezone">
+                  <span>View Project</span>
+                  <i class="bi bi-arrow-up-right ms-2"></i>
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 7. CONTACT SECTION ==================== -->
+    <section id="contact" class="section-padding">
+      <div class="container-xl">
+        <div class="section-header reveal-up">
+          <span class="section-kicker">06 // Let's Connect</span>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <!-- Direct Contact Details -->
+          <div class="col-lg-5 reveal-up">
+            <div class="glass-card p-4 p-md-5 h-100 d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="card-heading mb-3">Let's Build Something Great Together</h3>
+                <p class="text-secondary-light mb-4">
+                  Have a web development project, internship opportunity, or collaboration in mind? Reach out directly via email, LinkedIn, or the contact form.
+                </p>
+
+                <div class="contact-detail-list">
+                  <a href="mailto:aptechdazzy@gmail.com" class="contact-detail-item">
+                    <div class="detail-icon"><i class="bi bi-envelope-at"></i></div>
+                    <div>
+                      <small>Email Address</small>
+                      <span>aptechdazzy@gmail.com</span>
+                    </div>
+                  </a>
+
+                  <div class="contact-detail-item">
+                    <div class="detail-icon blue-detail"><i class="bi bi-geo-alt"></i></div>
+                    <div>
+                      <small>Location</small>
+                      <span>Karachi, Pakistan</span>
+                    </div>
+                  </div>
+
+                  <a href="https://www.linkedin.com/in/sadaf-shahid-" target="_blank" rel="noopener noreferrer" class="contact-detail-item">
+                    <div class="detail-icon"><i class="bi bi-linkedin"></i></div>
+                    <div>
+                      <small>LinkedIn</small>
+                      <span>linkedin.com/sadaf-shahid-</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-note mt-4 pt-3">
+                <i class="bi bi-shield-check text-purple me-2"></i>
+                <span>Available for frontend &amp; full stack web development opportunities.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="col-lg-7 reveal-up delay-1">
+            <div class="glass-card p-4 p-md-5 h-100">
+              <form id="contactForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="fullName" class="form-label">Full Name <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control glass-input" id="fullName" name="fullName" placeholder="Enter your full name" required />
+                    <div class="invalid-feedback">Please enter your full name.</div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="emailAddress" class="form-label">Email Address <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control glass-input" id="emailAddress" name="emailAddress" placeholder="name@example.com" required />
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="subject" class="form-label">Subject <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control glass-input" id="subject" name="subject" placeholder="Project inquiry, internship, or collaboration" required />
+                    <div class="invalid-feedback">Please enter a subject.</div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                    <textarea class="form-control glass-input" id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                    <div class="invalid-feedback">Please enter your message.</div>
+                  </div>
+
+                  <div class="col-12 pt-2">
+                    <button type="submit" class="btn btn-primary-glow w-100 py-3">
+                      <i class="bi bi-send-fill me-2"></i>Send Message
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Form Feedback Banner -->
+                <div id="formFeedback" class="form-feedback mt-3 d-none" role="status" aria-live="polite"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 8. FOOTER ==================== -->
+    <footer class="site-footer">
+      <div class="container-xl">
+        <div class="footer-glass">
+          <div class="row align-items-center gy-4">
+            <div class="col-lg-4 text-center text-lg-start">
+              <a href="#home" class="footer-brand">
+                <span class="brand-monogram">SS</span>
+                <span>Sadaf Shahid Sheikh</span>
+              </a>
+              <p class="footer-tagline mb-0 mt-2">
+                Software Engineering Student &amp; Full Stack Developer
+              </p>
+            </div>
+
+            <div class="col-lg-5">
+              <ul class="footer-links justify-content-center">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 d-flex justify-content-center justify-content-lg-end gap-2">
+              <a href="https://www.linkedin.com/in/sadaf-shahid-" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="mailto:aptechdazzy@gmail.com" class="social-icon-btn" aria-label="Email">
+                <i class="bi bi-envelope-fill"></i>
+              </a>
+            </div>
+          </div>
+
+          <hr class="footer-divider" />
+
+          <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2 footer-bottom">
+            <p class="mb-0">&copy; <span id="currentYear">2026</span> Sadaf Shahid Sheikh. All Rights Reserved.</p>
+            <p class="mb-0 text-muted-small">Crafted with precision in Karachi, Pakistan</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Project Details Modal (Clean Overview without Fake External Links) -->
+  <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content glass-modal">
+        <div class="modal-header border-0 pb-0">
+          <div>
+            <span class="modal-kicker" id="modalCategory">Project Case Overview</span>
+            <h3 class="modal-title mt-1" id="projectModalLabel">Project Title</h3>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-3">
+          <div class="modal-banner mb-4" id="modalBanner">
+            <i class="bi bi-watch" id="modalIcon"></i>
+            <span id="modalBannerTitle">PROJECT</span>
+          </div>
+          <h4 class="modal-subtitle">Project Overview &amp; Key Deliverables</h4>
+          <ul class="timeline-list mb-4" id="modalFeatures"></ul>
+
+          <h4 class="modal-subtitle">Technologies Used</h4>
+          <div class="tech-stack-list mb-2" id="modalTech"></div>
+        </div>
+        <div class="modal-footer border-0 pt-0">
+          <button type="button" class="btn btn-glass-outline" data-bs-dismiss="modal">Close</button>
+          <a href="#contact" class="btn btn-primary-glow" id="modalInquireBtn">
+            <i class="bi bi-chat-text me-2"></i>Request Demo / Source Code
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
